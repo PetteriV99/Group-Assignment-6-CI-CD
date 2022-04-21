@@ -15,4 +15,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "group-4-group-assignment-6-ci" #Must be unique in Heroku
           heroku_email: ${{secrets.OWNER_EMAIL}}
-          justlogin: true
