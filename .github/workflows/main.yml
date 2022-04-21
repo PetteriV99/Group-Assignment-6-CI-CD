@@ -16,12 +16,3 @@ jobs:
           heroku_app_name: "group-4-group-assignment-6-ci" #Must be unique in Heroku
           heroku_email: ${{secrets.OWNER_EMAIL}}
           justlogin: true
-
-      - name: "Login to heroku registry"
-        run: heroku container:login
-
-      - name: "Build and push to heroku registry"
-        run: heroku container:push web --app email-service-web
-
-      - name: "Releases the container"
-        run: heroku container:release web --app email-service-web
