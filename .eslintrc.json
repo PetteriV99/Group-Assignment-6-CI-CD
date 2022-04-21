@@ -1,8 +1,8 @@
 {
     "env": {
         "browser": true,
-        "commonjs": true,
-        "es2021": true
+        "jest": true,
+        "node": true
     },
     "extends": [
         "standard"
@@ -11,5 +11,6 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-    }
+    },
+    "ignorePatterns": ["*.test.js"]
 }
